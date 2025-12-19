@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/task_item_background"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/task_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        android:src="@drawable/ic_default_image"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/image_count_badge"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@id/task_image"
+        android:layout_alignEnd="@id/task_image"
+        android:background="@drawable/badge_background"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/task_image"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заголовок задачи"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/task_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание задачи..."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

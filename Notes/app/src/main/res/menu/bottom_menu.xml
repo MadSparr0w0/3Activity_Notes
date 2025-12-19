@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Задачи" />
+
+    <item
+        android:id="@+id/completedTasksFragment"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Выполненные" />
+
+    <item
+        android:id="@+id/imageEditorFragment"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Редактор" />
+
+</menu>
